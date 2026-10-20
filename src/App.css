@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main{
+  background-color: paleturquoise;
+  width: 70%;
+  max-width: 70%;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#container {
+  display: flex;
+  width: 100%;
+}
+
+header {
+  text-align: left;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+h1 {
+  font-size: calc(20px + 1.5vw);
+  font-family: Sarabun, sans-serif;
+}
+
+h2 {
+  font-size: calc(20px + 1.5vw);
+}
+
+h3 {
+  font-size: calc(18px + 1vw);
+  font-family: GungSeo, serif;
+}
+
+h4 {
+  font-size: calc(25px + 1vw);
+  font-family: SignPainter, Katari, serif;
+}
+
+p {
+  font-size: calc(8px + 1vw);
+}
+
+nav {
+  width: 30%;
+  max-width: 30%;
+  padding: 10px;
+  text-align: center;
+  background-color: #a98be8;
+}
+
+nav a {
+  display: block;
+  border: 2px solid black;
+  padding: 9px 20px;
+  background-color: #c9bce6;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(15px + 1vw);
+}
+
+nav li {
+  text-align: center;
+  margin: 40px 10px;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  background-color: lightblue;
+  padding: 5px;
+}
+
+.education, .experience, .leadership, .projects, .skills {
+  text-align: left;
+}
+
+.projects ul li ,
+.experience ul li,
+.leadership ul li {
+  font-size: calc(12px + 0.5vw);
+}
+
+.education p {
+  line-height: 1.2;
+}
+
+.leadership h3 {
+  margin-bottom: 10px;
+}
+
+.leadership p {
+  margin-bottom: 15px;
+}
+
+.leadership li {
+  line-height: 1.4;
+}
+
+.skills-list ul li {
+  list-style: none;
+  font-size: calc(15px + 0.5vw);
+  padding: 5px;
+}
+
+#calc {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: lightblue;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/016/584/185/small/falling-golden-glitter-confetti-on-transparent-background-shiny-particles-party-merry-christmas-happy-new-year-birthday-decoration-upper-border-3d-rendering-png.png");
+}
+
+.calc-inputs input {
+  margin: 5px;
+}
+
+.calc-buttons button {
+  background-color: #ede3e3;
+  background-image: url("https://t3.ftcdn.net/jpg/03/10/24/56/360_F_310245610_fpBpoFApfPlSaDAhhGqyvsuIe1kBqzPL.jpg");
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: calc(12px + 0.5vw);
+}
+
+.calc-output {
+  border: 2px solid black;
+  min-height: 30px;
+  padding: 10px;
+}
+
+/*Screens smaller than 1000px*/
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/*Screens smaller than 750px*/
+@media screen and (max-width: 750px) {
+  header {
+    text-align: center;
+  }
+  #container {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+  }
+  nav a {
+    display: block;
+    padding: 5px 2px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: calc(8px + 1.5vw);
+    padding-left: 0;
+    width: 100%;
+  }
+  nav li {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+  }
+  img{
+    max-width: 70%;
+    height: auto;
+  }
+  main {
+    width: 100%;
+    max-width: 100%;
+  }
+  p {
+    font-size: calc(10px + 1.5vw);
+  }
+  .projects ul li {
+    font-size: calc(10px + 1vw);
+  }
+  #calc {
+    padding: 40px 20px;
+  }
+}
